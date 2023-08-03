@@ -1,3 +1,6 @@
+// Changing style using CSStext property ----method-1
+
+
 function chngeColor() {
     if (document.getElementsByClassName('bulb')[0].style.backgroundColor == "yellow") {
         document.getElementsByClassName('bulb')[0].style.cssText = "border: 1px solid grey;"

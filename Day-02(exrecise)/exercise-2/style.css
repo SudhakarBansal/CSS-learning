@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.bulb {
+    margin: 50px 0px;
+    height: 30vw;
+    width: 30vw;
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bulbglow {
+    background-color: yellow;
+    border: none;
+    box-shadow: yellow 0px 0px 276px 153px;
+}
