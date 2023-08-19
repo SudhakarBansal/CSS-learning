@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("bell.png") no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 100px;
+    border: none;
+}
+
+button::after,button::before{
+    content: "";
+    background-color: #e63e32;;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+button::after {
+    animation: notisfication 3s ease-out 1s infinite;
+}
+button:before {
+    animation: notisfication 3s ease-out infinite;
+}
+@keyframes notisfication {
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+} 
